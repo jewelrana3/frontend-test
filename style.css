@@ -353,69 +353,81 @@ body.dark .right {
     height: 50px; 
 }
 
-/* .line {
+/* list div */
+.list-header{
+    margin-top: 50px;
+    background-color: #FFF;
+    padding: 20px;
+    width: 500px;
+}
+.list{
     display: flex;
-    align-items: flex-end;
+    gap: 40px;
+}
+.item{
+    display: flex;
+    justify-content: space-between; 
+    width: 500px;
+}
+.checkbox-div{
+    display: flex;
+    gap: 40px;
+}
+.checkbox-content{
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+.p-checkbox{
+    display: flex;
+}
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Style the checked state */
+  input[type="checkbox"]:checked {
+    background-color: #4CAF50; /* Change color when checked */
+  }
+
+
+  /* transactions css */
+ .transactions{
+    background: #DDD;
+    width: 500px;
+ }
+
+  .tran-header{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .tran-des{
+    display: flex;
+    gap: 10px;
+  }
+.tran-border{
+    border: 1px solid black;
+}
+.tran-image-header{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.tran-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.line1 {
-    height: 200px;
-    width: 20px;
-    background: #695CFE;
-    margin: 0 5px; 
+.tran-image img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
 }
-
-.lineF {
-    height: 180px; 
-    width: 20px;
-    background: #CCC;
+.tran-des{
+    display: flex;
+    gap: 20px;
 }
-.line2 {
-    height: 160px;
-    width: 20px;
-    background: #695CFE;
-    margin: 0 5px; 
-}
-
-.lineT {
-    height: 140px; 
-    width: 20px;
-    background: #CCC;
-}
-.line3 {
-    height: 120px;
-    width: 20px;
-    background: #695CFE;
-    margin: 0 5px; 
-}
-
-.lineThree {
-    height: 100px; 
-    width: 20px;
-    background: #CCC;
-}
-.line4 {
-    height: 80px;
-    width: 20px;
-    background: #695CFE;
-    margin: 0 5px; 
-}
-
-.lineFour {
-    height: 60px; 
-    width: 20px;
-    background: #CCC;
-}
-.line5 {
-    height: 50px;
-    width: 20px;
-    background: #695CFE;
-    margin: 0 5px; 
-}
-
-.lineFive {
-    height: 40px; 
-    width: 20px;
-    background: #CCC;
-} */
-
