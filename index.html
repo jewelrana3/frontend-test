@@ -7,6 +7,105 @@
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Frontend Test</title>
+    <style>
+        .textarea-head {
+            position: relative;
+        }
+
+        textarea {
+            margin-bottom: 10px;
+            padding: 10px 7px;
+            /* Optional: add some space between the textarea and the div */
+        }
+
+        .send {
+            margin-top: -70px;
+            position: absolute;
+            display: flex;
+            padding: 0 10px;
+
+        }
+
+        .send-icon {
+            display: flex;
+            gap: 10px;
+        }
+
+        .send-now {
+            background-color: blue;
+            padding: 5px;
+            color: white;
+            margin-left: 170px;
+            border-radius: 6px;
+        }
+
+        .semi-count {
+            width: 300px;
+            height: 200px;
+            position: relative;
+            color: #fff;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            box-sizing: border-box;
+            overflow: hidden;
+
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0px;
+                width: 300px;
+                height: 300px;
+                border: 40px solid;
+                box-sizing: border-box;
+                border-color: red blue yellow;
+                border-radius: 50%;
+                transform: rotate(10deg);
+
+            }
+        }
+
+        .ninetin h3 {
+            color: black;
+        }
+
+
+
+        .done {
+            display: flex;
+            justify-content: space-between;
+            width: 300px;
+        }
+
+        .circle-ball {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: rgb(37, 18, 146);
+        }
+
+        .circle-ball2 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: rgb(168, 194, 21);
+        }
+
+        .circle-ball3 {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background: rgb(214, 46, 46);
+        }
+
+        .circle-head {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -14,7 +113,7 @@
         <header>
             <div class="image-text">
                 <span class="image">
-                    <img src="https://i.ibb.co/NLTRbYR/download-1.png" alt="logo">
+                    <h1>S.</h1>
                 </span>
 
                 <div class="text header-text">
@@ -97,200 +196,346 @@
         </div>
     </nav>
     <div class="right">
-        <div>
-            <h2>Hellow.Jhon.D</h2>
-            <p>View and control your finances here!</p>
-        </div>
-        <div class="balance">
-            <div class="balance-header">
-                <p>Balance Statatics</p>
-                <p>Filter</p>
-            </div>
-            <div class="line-header">
-                <div>
-                    <h5>$ 555</h5>
-                    <p>your total balance</p>
-                    <p class="border"></p>
-                    <p class="always">Always see your <br>engineer updates</p>
-                </div>
-                <div class="head-line">
-                    <div>
-                        <div class="line">
-                            <p class="line1"></p>
-                            <p class="lineF"></p>
-                        </div>
-                        <p>Oct</p>
-                    </div>
-                    <div>
-                        <div class="line">
-                            <p class="line2"></p>
-                            <p class="lineT"></p>
-                        </div>
-                        <p>Nov</p>
-                    </div>
-                    <div>
-                        <div class="line">
-                            <p class="line3"></p>
-                            <p class="lineThree"></p>
-                        </div>
-                        <p>Dec</p>
-                    </div>
-                    <div>
-                        <div class="line">
-                            <p class="line4"></p>
-                            <p class="lineFour"></p>
-                        </div>
-                        <p>Jan</p>
-                    </div>
-                    <div>
-                        <div class="line">
-                            <p class="line5"></p>
-                            <p class="lineFive"></p>
-                        </div>
-                        <p>Feb</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- list -->
-        <div class="list-header">
+        <div class="right-header-div">
             <div>
-                <h5>List of items to buy</h5>
-                <div class="list">
-                    <div>
-                        <h4>02:00</h4>
-                        <p>sat,auguest 12</p>
+                <h2>Hellow.Jhon.D</h2>
+                <p>View and control your finances here!</p>
+            </div>
+            <div class="first-div">
+                <div class="balance">
+                    <div class="balance-header">
+                        <p>Balance Statatics</p>
+                        <div class="filter">
+                            <p>Filter</p>
+                            <p><i class='bx bx-chevron-down'></i></p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>05:00</h4>
-                        <p>sat,auguest 12</p>
+                    <div class="line-header">
+                        <div>
+                            <h5>$ 555</h5>
+                            <p>your total balance</p>
+                            <p class="border"></p>
+                            <p class="always">Always see your <br>engineer updates</p>
+                        </div>
+                        <div class="head-line">
+                            <div>
+                                <div class="line">
+                                    <p class="line1"></p>
+                                    <p class="lineF"></p>
+                                </div>
+                                <p>Oct</p>
+                            </div>
+                            <div>
+                                <div class="line">
+                                    <p class="line2"></p>
+                                    <p class="lineT"></p>
+                                </div>
+                                <p>Nov</p>
+                            </div>
+                            <div>
+                                <div class="line">
+                                    <p class="line3"></p>
+                                    <p class="lineThree"></p>
+                                </div>
+                                <p>Dec</p>
+                            </div>
+                            <div>
+                                <div class="line">
+                                    <p class="line4"></p>
+                                    <p class="lineFour"></p>
+                                </div>
+                                <p>Jan</p>
+                            </div>
+                            <div>
+                                <div class="line">
+                                    <p class="line5"></p>
+                                    <p class="lineFive"></p>
+                                </div>
+                                <p>Feb</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="item">
-                    <p>0/3 shopping list</p>
-                    <p>+ add item</p>
                 </div>
                 <div>
-                    <div class="checkbox-div">
-                        <div class="checkbox-content">
-                            <div class="p-checkbox">
-                                <p> <input type="checkbox" id="myCheckbox"></p>
-                                <p>macbook</p>
-                            </div>
-                            <div>
-                                <i class='bx bx-dots-vertical-rounded'></i>
-                            </div>
-                        </div>
-                        <div class="checkbox-content">
-                            <div class="p-checkbox">
-                                <p> <input type="checkbox" id="myCheckbox"></p>
-                                <p>macbook</p>
-                            </div>
-                            <div>
-                                <i class='bx bx-dots-vertical-rounded'></i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="checkbox-div">
-                        <div class="checkbox-content">
-                            <div class="p-checkbox">
-                                <p> <input type="checkbox" id="myCheckbox"></p>
-                                <p>macbook</p>
-                            </div>
-                            <div>
-                                <i class='bx bx-dots-vertical-rounded'></i>
-                            </div>
-                        </div>
-                        <div class="checkbox-content">
-                            <div class="p-checkbox">
-                                <p> <input type="checkbox" id="myCheckbox"></p>
-                                <p>macbook</p>
-                            </div>
-                            <div>
-                                <i class='bx bx-dots-vertical-rounded'></i>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="https://i.ibb.co/X2kg3VQ/Screenshot-2023-12-20-101124.jpg" alt="pic">
                 </div>
             </div>
-            
-        </div>
 
-        <!-- transactions -->
-        <div class="transactions">
-            <div>
-                <div class="tran-header">
+            <!-- list -->
+            <div class="list-header">
+                <div class="list-head-des">
+                    <h5>List of items to buy</h5>
+                    <div class="list">
+                        <div>
+                            <h4>02:00</h4>
+                            <p>sat,auguest 12</p>
+                        </div>
+                        <div>
+                            <h4>05:00</h4>
+                            <p>sat,auguest 12</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <p>0/3 shopping list</p>
+                        <p>+ add item</p>
+                    </div>
                     <div>
-                        <p>Last transactions</p>
-                    </div>
-                    <div class="tran-des">
-                        <p>Newest</p>
-                        <p>Oldest</p>
+                        <div class="checkbox-div">
+                            <div class="checkbox-content">
+                                <div class="p-checkbox">
+                                    <p><input type="checkbox" id="myCheckbox"></p>
+                                    <p>macbook</p>
+                                </div>
+                                <div>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </div>
+                            </div>
+                            <div class="checkbox-content">
+                                <div class="p-checkbox">
+                                    <p> <input type="checkbox" id="myCheckbox"></p>
+                                    <p>macbook</p>
+                                </div>
+                                <div>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-div">
+                            <div class="checkbox-content">
+                                <div class="p-checkbox">
+                                    <p> <input type="checkbox" id="myCheckbox"></p>
+                                    <p>macbook</p>
+                                </div>
+                                <div>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </div>
+                            </div>
+                            <div class="checkbox-content">
+                                <div class="p-checkbox">
+                                    <p> <input type="checkbox" id="myCheckbox"></p>
+                                    <p>macbook</p>
+                                </div>
+                                <div>
+                                    <i class='bx bx-dots-vertical-rounded'></i>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <p class="tran-border"></p>
-
-                <div class="tran-image-header">
-                    <div class="tran-image">
-                        <div>
-                            <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
-                        </div>
-                        <div>
-                            <h4>juyel</h4>
-                            <p>02 july 2023</p>
+                <p class="list-header-border"></p>
+                <div>
+                    <h4>Eisther woward</h4>
+                    <div class="eisther">
+                        <h4 class="eisther-h4">Are you ready</h4>
+                        <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="">
+                    </div>
+                    <div class="eisther2">
+                        <h4 class="eisther-h2">Are you ready</h4>
+                        <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="">
+                    </div>
+                    <div class="textarea-head">
+                        <textarea name="" id="" cols="48" rows="7" placeholder="message"></textarea>
+                        <div class="send">
+                            <div class="send-icon">
+                                <p><i class='bx bx-smile'></i></p>
+                                <p><i class='bx bx-capsule'></i></p>
+                            </div>
+                            <div class="send-now">
+                                <p class="">Send Now</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="tran-des">
-                        <p>-$3000</p>
+                </div>
+            </div>
+
+            <!-- transactions -->
+            <div class="transactions">
+                <div class="transaction-head">
+                    <div class="tran-header">
+                        <div>
+                            <p>Last transactions</p>
+                        </div>
+                        <div class="tran-des">
+                            <p>Newest</p>
+                            <p>Oldest</p>
+                        </div>
+                    </div>
+                    <p class="tran-border"></p>
+
+                    <div class="tran-image-header">
+                        <div class="tran-image">
+                            <div>
+                                <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h4>juyel</h4>
+                                <p>02 july 2023</p>
+                            </div>
+                        </div>
+                        <div class="tran-des">
+                            <p>-$3000</p>
+                            <p><i class='bx bx-dots-vertical-rounded'></i></p>
+                        </div>
+
+                    </div>
+                    <p class="tran-border"></p>
+                    <div class="tran-image-header">
+                        <div class="tran-image">
+                            <div>
+                                <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h4>juyel</h4>
+                                <p>02 july 2023</p>
+                            </div>
+                        </div>
+                        <div class="tran-des">
+                            <p>-$3000</p>
+                            <p><i class='bx bx-dots-vertical-rounded'></i></p>
+                        </div>
+
+                    </div>
+                    <p class="tran-border"></p>
+                    <div class="tran-image-header">
+                        <div class="tran-image">
+                            <div>
+                                <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h4>juyel</h4>
+                                <p>02 july 2023</p>
+                            </div>
+                        </div>
+                        <div class="tran-des">
+                            <p>-$3000</p>
+                            <p><i class='bx bx-dots-vertical-rounded'></i></p>
+                        </div>
+
+                    </div>
+                    <p class="tran-border"></p>
+                </div>
+                <div class="trans-left">
+                    <div class="analylis-header">
+                        <h4 class="analylis-h4">Analylis</h4>
                         <p><i class='bx bx-dots-vertical-rounded'></i></p>
                     </div>
-
+                  
+              
+                  
+                    <div class="semi-count">
+                     
+                        <div class="ninetin">
+                            <h3>90%</h3>
+                            <p>done</p>
+                        </div>
+                    </div>
+                    <div class="done">
+                        <div class="circle-head">
+                            <p class="circle-ball"></p>
+                            <p>done</p>
+                        </div>
+                        <div class="circle-head">
+                            <p class="circle-ball2"></p>
+                            <p>In progess</p>
+                        </div>
+                        <div class="circle-head">
+                            <p class="circle-ball3"></p>
+                            <p>To do</p>
+                        </div>
+                    </div>
                 </div>
-                <p class="tran-border"></p>
-                <div class="tran-image-header">
-                    <div class="tran-image">
-                        <div>
-                            <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
-                        </div>
-                        <div>
-                            <h4>juyel</h4>
-                            <p>02 july 2023</p>
-                        </div>
-                    </div>
-                    <div class="tran-des">
-                        <p>-$3000</p>
-                        <p><i class='bx bx-dots-vertical-rounded'></i></p>
-                    </div>
+            </div>
 
+        </div>
+        <div class="left-side">
+            <div>
+                <div class="sideber-left-header">
+                    <span class="text-income"> Express and income</span>
+                    <div class="sideber-header">
+                        <div>
+                            <p>Express </p>
+                            <h5>75%</h5>
+                            <p>3456</p>
+                        </div>
+                        <div class="border-div">
+                            <p class="border-income"></p>
+                            <p>vs</p>
+                            <p class="border-income"></p>
+                        </div>
+                        <div>
+                            <p>income</p>
+                            <h5>45%</h5>
+                            <p>2656</p>
+                        </div>
+                    </div>
+                    <div class="process-header">
+                        <p class="process"></p>
+                        <p class="process2"></p>
+                    </div>
                 </div>
-                <p class="tran-border"></p>
-                <div class="tran-image-header">
-                    <div class="tran-image">
-                        <div>
-                            <img src="https://i.ibb.co/vz50pCP/images-3.jpg" alt="pic">
-                        </div>
-                        <div>
-                            <h4>juyel</h4>
-                            <p>02 july 2023</p>
-                        </div>
-                    </div>
-                    <div class="tran-des">
-                        <p>-$3000</p>
-                        <p><i class='bx bx-dots-vertical-rounded'></i></p>
-                    </div>
 
+                <div>
+                    <div class="latest">
+                        <h4>Latest spending</h4>
+                        <p> <i class='bx bx-dots-vertical-rounded'></i></p>
+                    </div>
+                    <div class="online-header">
+                        <div class="online">
+                            <div>
+                                <img src="https://i.ibb.co/X2kg3VQ/Screenshot-2023-12-20-101124.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h5>Online store</h5>
+                                <h6>May 4, 2023 at 8:00pm</h6>
+                            </div>
+
+                        </div>
+                        <p class="online-border"></p>
+                        <div class="online">
+                            <div>
+                                <img src="https://i.ibb.co/X2kg3VQ/Screenshot-2023-12-20-101124.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h5>Online store</h5>
+                                <h6>May 4, 2023 at 8:00pm</h6>
+                            </div>
+
+                        </div>
+                        <p class="online-border"></p>
+                        <div class="online">
+                            <div>
+                                <img src="https://i.ibb.co/X2kg3VQ/Screenshot-2023-12-20-101124.jpg" alt="pic">
+                            </div>
+                            <div>
+                                <h5>Online store</h5>
+                                <h6>May 4, 2023 at 8:00pm</h6>
+                            </div>
+
+                        </div>
+                        <p class="online-border"></p>
+
+                        <div class="view-head">
+                            <p class="view">View all</p>
+                            <p><i class='bx bx-right-arrow-alt'></i></p>
+                        </div>
+                    </div>
+                    <div class="premium">
+                        <p>Go To premium</p>
+                        <img src="https://i.ibb.co/dQL1nKR/Screenshot-2023-12-20-114257.jpg" alt="pic">
+                        <p>Need more features?</p>
+                        <h6 class="premium-text">Update your account to premium to get more features</h6>
+                        <button class="get">Get Now</button>
+                    </div>
                 </div>
-                <p class="tran-border"></p>
             </div>
         </div>
-
     </div>
 
 
 
     <!-- script -->
     <script src="script.js"></script>
+
 </body>
 
 </html>
